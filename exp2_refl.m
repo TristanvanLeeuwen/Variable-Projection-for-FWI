@@ -135,7 +135,7 @@ legend('LBFGS','GN w/o corr','GN w corr');
 set(gca,'fontsize',20);xlabel('iteration','fontsize',20);ylabel('||g||_2','fontsize',20);
 
 figure;
-loglog(1+info1(:,1),error1,'k',1+info2(:,1),error2,'r',1+info3(:,1),error3,'b','linewidth',2);
+semilogx(1+info1(:,1),error1,'k',1+info2(:,1),error2,'r',1+info3(:,1),error3,'b','linewidth',2);
 legend('LBFGS','GN w/o corr','GN w corr');
 set(gca,'fontsize',20);xlabel('iteration','fontsize',20);ylabel('reconstruction error','fontsize',20);
 
